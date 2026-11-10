@@ -1,0 +1,90 @@
+object MainForm: TMainForm
+  Left = 300
+  Height = 550
+  Top = 200
+  Width = 800
+  Caption = 'Eski Program Başlatıcı'
+  ClientHeight = 550
+  ClientWidth = 800
+  DesignTimePPI = 120
+  Position = poScreenCenter
+  LCLVersion = '4.8.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object pnlTop: TPanel
+    Left = 0
+    Height = 55
+    Top = 0
+    Width = 800
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 55
+    ClientWidth = 800
+    TabOrder = 0
+    object btnAdd: TButton
+      Left = 10
+      Height = 35
+      Top = 10
+      Width = 125
+      Caption = 'Ekle'
+      TabOrder = 0
+      OnClick = DoAdd
+    end
+    object btnSettings: TButton
+      Left = 145
+      Height = 35
+      Top = 10
+      Width = 125
+      Caption = 'Ayarlar'
+      TabOrder = 1
+      OnClick = DoSettings
+    end
+    object btnDosbox: TButton
+      Left = 280
+      Height = 35
+      Top = 10
+      Width = 125
+      Caption = 'DOSBox'
+      TabOrder = 2
+      OnClick = DoDosboxOnly
+    end
+  end
+  object lvProgs: TListView
+    Left = 0
+    Height = 495
+    Top = 55
+    Width = 800
+    Align = alClient
+    Columns = <>
+    LargeImages = imgList
+    PopupMenu = popMenu
+    ReadOnly = True
+    TabOrder = 1
+    ViewStyle = vsIcon
+    OnDblClick = LVDblClick
+    OnMouseDown = LVMouseDown
+  end
+  object imgList: TImageList
+    Height = 48
+    Width = 48
+    Left = 350
+    Top = 200
+  end
+  object popMenu: TPopupMenu
+    OnPopup = PopupOpen
+    Left = 450
+    Top = 200
+    object miRun: TMenuItem
+      Caption = 'Çalıştır'
+      OnClick = DoRun
+    end
+    object miSet: TMenuItem
+      Caption = 'Ayarla...'
+      OnClick = DoEntrySettings
+    end
+    object miRemove: TMenuItem
+      Caption = 'Kaldır'
+      OnClick = DoRemove
+    end
+  end
+end
