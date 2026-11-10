@@ -1,12 +1,12 @@
-Eski 16 Bit Windows ve DOS programlarını Otvdm ve Doskey ile çalıştırmak için Lazarus Pascal kodu ile yapılmış 
+Eski 16 Bit Windows ve DOS programlarını "Otvdm" ve "Doskey" ile çalıştırmak için Lazarus Pascal kodu ile yapılmış 
 basit bir ara birimdir. Dili Türkçe'dir. Claude.ai yapay zeka ortamında yapılmıştır.
 
-16 bit eski Windows programlarını Windows'ta çalışabilmesi için Otvdm programı sitesinden indirilip bir 
+16 bit eski Windows programlarını Windows'ta çalışabilmesi için "Otvdm" programı sitesinden indirilip bir 
 klasöre açılmalıdır.
 
 Bağlantısı : https://github.com/otya128/winevdm/releases
 
-Dos programlarını çalıştırmak için dosbox programı indirilip kurulmalıdır.
+Dos programlarını çalıştırmak için "Dosbox" programı indirilip kurulmalıdır.
 
 Bağlantısı : https://www.dosbox.com/ 
 
